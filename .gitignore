@@ -1,0 +1,19 @@
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+/dist
+
+# misc
+.DS_Store
+.env
+.env
+.env.development
+.env.test
+.env.production
+
+.vscode/chrome
+yarn-debug.log*
+yarn-error.log*
