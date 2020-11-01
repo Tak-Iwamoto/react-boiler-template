@@ -19,13 +19,20 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        test: /\.s[ac]ss$/i,
+        use: [
+          'style-loader',
+          'css-loader?modules',
+          'sass-loader',
+        ],
       },
     ],
   },
   resolve: {
     extensions: ['.js', '.ts', '.tsx', '.json'],
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   plugins: [
     new HTMLPlugin({
